@@ -1,10 +1,12 @@
-![Ý Tưởng drawio](https://github.com/user-attachments/assets/7c0c3432-7060-4a23-91a0-1959e848f6bc)
+
 
 # Information System for Investigating Data, Orienting Public Opinion, and Improving Political Activities for Party Officials
 
 ## Overview
 
 This project is designed as a chatbot system that aims to assist Party officials by answering questions about various issues related to **Vietnamese politics**. The system leverages advanced techniques such as **Retrieval-Augmented Generation (RAG)** to retrieve relevant documents from a vector store, enhancing the context for the **Large Language Model (LLM)** to provide precise and insightful responses. The project integrates **query routing** and **query transformation** to improve the accuracy of the responses and ensure that the chatbot answers in the most relevant context.
+
+![Ý Tưởng drawio](https://github.com/user-attachments/assets/7c0c3432-7060-4a23-91a0-1959e848f6bc)
 
 ## Objectives
 - **Provide Accurate Answers**: The system enables Party officials to inquire about political issues, policy, and public opinion, offering insightful responses.
