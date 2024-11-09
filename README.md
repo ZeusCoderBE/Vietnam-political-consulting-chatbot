@@ -97,16 +97,17 @@ To set up and run the system locally, follow these steps:
 ---
 
 ## Dependencies
-
 - **Flask**: Lightweight web framework for Python, used to serve the chatbot on the web.
 - **Qdrant**: High-performance vector database used for storing and retrieving document embeddings.
-- **Transformers**: Library for working with pre-trained language models, such as the ones used for document retrieval and question answering.
+- **Transformers**: Library for working with pre-trained language models, such as BERT, RoBERTa, or T5. It is specifically used for fine-tuning transformer-based models to generate document embeddings for downstream tasks like document retrieval and similarity matching.
+- **paraphrase-multilingual-mpnet-base-v2**: A multilingual model from Hugging Face used for paraphrase identification and reranking tasks. This model can generate embeddings for sentences in multiple languages, helping in tasks like ranking or finding similar sentences/documents in a multilingual context.
+- **vietnamese-bi-encoder**: A model specifically fine-tuned for Vietnamese language tasks, designed for generating high-quality embeddings for Vietnamese text. This model is used for tasks such as document retrieval, sentence similarity, and ranking in Vietnamese.
 - **NumPy**: Numerical computing library used for handling matrix operations and data manipulation.
 - **Pandas**: Data analysis library used for data manipulation and analysis.
-- **scikit-learn**: Machine learning library used for model fine-tuning and evaluation.
+- **TensorFlow**: Deep learning library used for model fine-tuning and evaluation.
+- **Langchain**: Framework designed for developing applications powered by language models. It helps integrate and orchestrate LLMs (Large Language Models) with external tools, databases, and APIs, enabling complex conversational agents and workflows.
 
 ---
-
 ## Fine-Tuning Process
 
 - The **embedding model** was fine-tuned using a dataset related to Vietnamese politics, ensuring that the embeddings captured the contextual meaning of political terms and issues.
