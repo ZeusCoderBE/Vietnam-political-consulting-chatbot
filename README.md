@@ -8,6 +8,9 @@ This project is designed as a chatbot system that aims to assist Party officials
 
 ![Ý Tưởng drawio](https://github.com/user-attachments/assets/7c0c3432-7060-4a23-91a0-1959e848f6bc)
 
+![Uploading image.png…]()
+
+
 ## Objectives
 - **Provide Accurate Answers**: The system enables Party officials to inquire about political issues, policy, and public opinion, offering insightful responses.
 - **Orient Public Opinion**: By utilizing current political data, the system helps in shaping public opinion.
