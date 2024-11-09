@@ -132,10 +132,4 @@ This approach not only supports **data-driven political decision-making** but al
 
 ---
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to adapt the README to your specific project structure and use case, but this should provide a comprehensive foundation for explaining your chatbot system clearly.
