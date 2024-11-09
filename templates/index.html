@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VNA GROUP Chatbot UI</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Thêm tệp script.js -->
+    <script src="../static/script.js" defer></script>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="sidebar">
+            <button class="toggle-button" onclick="toggleSidebar()">&#9776;</button>
+            <div class="sidebar-content" id="sidebar">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#">Đoạn Chat Mới</a></li>
+                    <li><a href="#">Đoạn Chat Trước Đó</a></li>
+                    <li><a href="#">Đăng Xuất</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaWGBBfkJuhnliJK-b4EeUVGvRloaFwZcKtg&s" alt="Chatbot" class="chatbot-image">
+                <h2>VNA Group AI</h2>
+            </div>
+            <div class="chat-box" id="chat-output">
+                <div class="chat-message bot">
+                    <div class="avatar bot-avatar" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaWGBBfkJuhnliJK-b4EeUVGvRloaFwZcKtg&s');"></div>
+                    <div class="message">Chào Bạn! Tôi là một trợ lý chuyên gia về chính trị Việt Nam. Nếu bạn có câu hỏi nào về chính trị Việt Nam hoặc tư tưởng Hồ Chí Minh, đừng ngần ngại hỏi tôi nhé! Tôi sẵn sàng cung cấp thêm thông tin cho Bạn.</div>
+                </div>
+            </div>
+
+            <!-- Chỉ sử dụng input và button, không cần form -->
+            <div class="input-area">
+                <input type="text" id="user-query" name="query" placeholder="Nhập nội dung..." required />
+                <button id="send-button">Gửi</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
