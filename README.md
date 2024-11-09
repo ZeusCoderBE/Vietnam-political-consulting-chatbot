@@ -8,7 +8,8 @@ This project is designed as a chatbot system that aims to assist Party officials
 
 ![Ý Tưởng drawio](https://github.com/user-attachments/assets/7c0c3432-7060-4a23-91a0-1959e848f6bc)
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/d1fc0fca-c361-4d08-a48d-5c7a0432792c)
+
 
 
 ## Objectives
