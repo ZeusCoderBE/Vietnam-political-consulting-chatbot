@@ -118,7 +118,7 @@ body {
     height: 55px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -240,4 +240,34 @@ button {
 
 button:hover {
     background-color: #5a75e2;
+}
+/* Hiệu ứng rung cho avatar */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(3px); }
+}
+
+.chat-message.bot.thinking .avatar {
+    animation: shake 0.5s infinite;
+}
+
+/* Hiệu ứng chuyển động lên xuống cho dấu ba chấm */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-5px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(5px); }
+    100% { transform: translateY(0); }
+}
+
+/* Kiểu hiển thị dấu ba chấm */
+.chat-message.bot.thinking .message {
+    font-style: italic;
+    color: gray;
+    font-size: 16px;
+    display: inline-block;
+    animation: bounce 1s infinite;  /* Áp dụng hiệu ứng bounce cho dấu ba chấm */
 }

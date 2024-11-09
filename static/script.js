@@ -8,9 +8,32 @@ function displayUserMessage(query) {
             <div class="message">${query.replace(/\n/g, '<br>')}</div>
         </div>
     `;
-    chatOutput.scrollTop = chatOutput.scrollHeight;
-}
 
+    // Show thinking message with avatar when sending request
+    const thinkingMessageDiv = document.createElement('div');
+    thinkingMessageDiv.classList.add('chat-message', 'bot', 'thinking');
+
+    const avatarDiv = document.createElement('div');
+    avatarDiv.classList.add('avatar', 'bot-avatar');
+    avatarDiv.style.backgroundImage = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaWGBBfkJuhnliJK-b4EeUVGvRloaFwZcKtg&s')";
+
+    const messageContainer = document.createElement('div');
+    messageContainer.classList.add('message');
+    messageContainer.innerHTML = "Đang suy nghĩ..."; // Initial thinking text
+
+    thinkingMessageDiv.appendChild(avatarDiv);
+    thinkingMessageDiv.appendChild(messageContainer);
+    chatOutput.appendChild(thinkingMessageDiv);
+    chatOutput.scrollTop = chatOutput.scrollHeight;
+
+    // Update thinking dots every 100ms
+    let dots = 0;
+    const dotsSequence = [".", "..", "..."];
+    const dotsInterval = setInterval(function () {
+        messageContainer.innerHTML = "Đang suy nghĩ" + dotsSequence[dots % 3]; // Cycle through dots
+        dots++;
+    }, 100);  // Update dots every 100ms
+}
 function formatLinks(text) {
     let formattedText = text.replace(/\n/g, "<br>");
     const linkPattern = /(https?:\/\/[^\s]+)/g;
@@ -26,6 +49,10 @@ function displayBotMessage(response) {
     const chatOutput = document.getElementById('chat-output');
     let message = response.result;
     message = formatLinks(message);
+    const thinkingMessage = document.querySelector('.chat-message.bot.thinking');
+    if (thinkingMessage) {
+        thinkingMessage.remove();
+    }
     const messageDiv = document.createElement('div');
     messageDiv.classList.add('chat-message', 'bot');
     const avatarDiv = document.createElement('div');
