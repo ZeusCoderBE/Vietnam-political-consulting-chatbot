@@ -88,7 +88,7 @@ To set up and run the system locally, follow these steps:
 
 3. **Run the Flask application**:
    ```bash
-   python app.py
+   python run_app.py
    ```
 
 4. **Access the chatbot**:
