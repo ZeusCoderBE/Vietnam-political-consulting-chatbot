@@ -10,7 +10,11 @@ This project is designed as a chatbot system that aims to assist Party officials
 
 ![image](https://github.com/user-attachments/assets/d1fc0fca-c361-4d08-a48d-5c7a0432792c)
 
+---
 
+## Demo
+link: https://drive.google.com/file/d/184WYFJEcPAur7l5YT7y9dxXGJes-TgdN/view?usp=sharing
+---
 
 ## Objectives
 - **Provide Accurate Answers**: The system enables Party officials to inquire about political issues, policy, and public opinion, offering insightful responses.
