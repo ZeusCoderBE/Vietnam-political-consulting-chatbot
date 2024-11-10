@@ -13,7 +13,8 @@ This project is designed as a chatbot system that aims to assist Party officials
 ---
 
 ## Demo
-link: https://drive.google.com/file/d/184WYFJEcPAur7l5YT7y9dxXGJes-TgdN/view?usp=sharing
+
+**link**: https://drive.google.com/file/d/184WYFJEcPAur7l5YT7y9dxXGJes-TgdN/view?usp=sharing
 ---
 
 ## Objectives
