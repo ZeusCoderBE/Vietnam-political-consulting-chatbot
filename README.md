@@ -12,7 +12,15 @@ This project is designed as a chatbot system that aims to assist Party officials
 
 ## Demo
 
-![image](https://github.com/user-attachments/assets/d1fc0fca-c361-4d08-a48d-5c7a0432792c)
+![image](https://github.com/user-attachments/assets/47b998c1-faf0-4d9c-ac70-9397565da1d5)
+
+
+![image](https://github.com/user-attachments/assets/703e8b65-222a-4333-abc6-69c8ddb67ba3)
+
+
+![Uploading image.png…]()
+
+
 
 ---
 
