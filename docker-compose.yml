@@ -11,7 +11,18 @@ services:
     volumes:
       - ./qdrant_data:/qdrant/storage
 
-configs:
-  qdrant_config:
-    content: |
-      log_level: INFO
+  airflow:
+    image: apache/airflow:2.9.1
+    volumes:
+      - ./airflow:/opt/airflow
+    ports:
+      - "8081:8080"
+    command: airflow standalone
+    networks:
+      - data_network
+    env_file:
+      - .env 
+networks:
+  data_network:
+    driver: bridge
+    name: data_networ

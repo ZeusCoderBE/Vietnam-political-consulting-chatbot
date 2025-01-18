@@ -4,13 +4,16 @@
 
 ## Overview
 
+
+**Link Demo Product**: https://drive.google.com/file/d/184WYFJEcPAur7l5YT7y9dxXGJes-TgdN/view?usp=sharing
+
 This project is designed as a chatbot system that aims to assist Party officials by answering questions about various issues related to **Vietnamese politics**. The system leverages advanced techniques such as **Retrieval-Augmented Generation (RAG)** to retrieve relevant documents from a vector store, enhancing the context for the **Large Language Model (LLM)** to provide precise and insightful responses. The project integrates **query routing** and **query transformation** to improve the accuracy of the responses and ensure that the chatbot answers in the most relevant context.
 
-![Ý Tưởng drawio](https://github.com/user-attachments/assets/7c0c3432-7060-4a23-91a0-1959e848f6bc)
+![RAG](https://github.com/user-attachments/assets/2cf26c9f-c0a6-411a-be72-8b3bd589b3e7)
 
 ![image](https://github.com/user-attachments/assets/d1fc0fca-c361-4d08-a48d-5c7a0432792c)
 
-
+---
 
 ## Objectives
 - **Provide Accurate Answers**: The system enables Party officials to inquire about political issues, policy, and public opinion, offering insightful responses.

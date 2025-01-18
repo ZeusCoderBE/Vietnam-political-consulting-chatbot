@@ -54,7 +54,6 @@ body {
 .sidebar-content.active {
     display: none;
 }
-
 .toggle-button {
     background-color: #6c88f2;
     border: none;
@@ -90,13 +89,13 @@ body {
     display: block;
     padding: 8px 12px;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 15px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .sidebar ul li a:hover {
     background-color: #e0f0fc;
-    color: #0984e3;
+    color:#5a75e2;
 }
 
 .main-content {
@@ -109,8 +108,8 @@ body {
 }
 
 .header {
-    background-color: #6c88f2; 
-    color: white;
+    background-color: #f1f5f9; 
+    color: black;
     padding: 12px 20px;
     display: flex;
     align-items: center;
@@ -128,8 +127,8 @@ body {
 }
 
 .chatbot-image {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     object-fit: cover;
     border-radius: 50%;
     margin-left: 25px;
@@ -189,9 +188,9 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Light shadow for depth */
 }
 
-.avatar {
-    width: 50px;
-    height: 50px;
+.avatar {   
+    width: 40px;
+    height: 40px;
     background-color: #ccc;
     border-radius: 50%;
     background-size: cover;
@@ -204,41 +203,68 @@ body {
 
 .input-area {
     display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
     padding: 15px;
     background-color: #ffffff;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    width: 100%; /* Đảm bảo khung có chiều rộng phù hợp */
 }
 
 input[type="text"] {
-    flex: 1;
+    flex: 1; /* Chiếm hết chiều rộng còn lại */
     padding: 12px 16px;
     border: 1px solid #dfe6e9;
     border-radius: 8px;
-    margin-right: 12px;
     font-size: 14px;
     background-color: #f7f9fc;
     transition: border-color 0.3s ease;
+    margin: 0 5px; /* Khoảng cách giữa các nút và ô nhập liệu */
 }
 
 input[type="text"]:focus {
     border-color: #0984e3;
     outline: none;
 }
-
-button {
-    padding: 12px 18px;
-    background-color: #0984e3;
-    color: white;
+.button-sidebar 
+{
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 2px  white;
+}
+.add-link-button{
+    padding: 2px 5px;
+    margin-inline-start:5px;
+    border-radius: 20px;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+.add-link-button:hover
+{
+    background-color: #6be865;
+}
+.attach-button,
+.send-button {
+    background-color: rgb(223, 222, 222);
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     cursor: pointer;
-    font-size: 14px;
+    padding: 10px 15px; /* Khoảng cách bên trong nút */
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.attach-button {
+    margin-right: 5px; /* Khoảng cách giữa nút đính kèm và ô nhập liệu */
+}
+
+.send-button {
+    margin-left: 5px; /* Khoảng cách giữa nút gửi và ô nhập liệu */
+}
+.button-sidebar:hover,
+.attach-button:hover,
+.send-button:hover {
     background-color: #5a75e2;
 }
 /* Hiệu ứng rung cho avatar */
@@ -270,4 +296,21 @@ button:hover {
     font-size: 16px;
     display: inline-block;
     animation: bounce 1s infinite;  /* Áp dụng hiệu ứng bounce cho dấu ba chấm */
+}
+/* Thêm hiệu ứng hover 3D cho các nút */
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng tin nhắn có thời gian */
+.chat-message .timestamp {
+    font-size: 12px;
+    color: #636e72;
+    margin-left: 10px;
+}
+
+/* Hiệu ứng loading cho avatar */
+.chat-message.bot .avatar.loading {
+    animation: shake 0.5s infinite;
 }
